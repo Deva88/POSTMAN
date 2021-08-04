@@ -15,12 +15,12 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer BQC81Yn0br3sH_1Uk39t_mkrYBMWLcrTHoa3FTu3DPTSrCEbPejg9LuObRS6Ll1NBuq6hpp7lC6oIIoDmAhuQugXLm_Vs3Qsw4Q5BgCyXSM6361biw7rd3PyEhh4dWTANs9wTyu8QYPGjiy5Y6X4MDJWs8da_ONF0_uZQrQgR4DnllbDuKhOCdgO_dr38ncUouiR4t3ZDGR1JQUw2BBuZ9hJueibFBMW7pRLhGpvkKIO6t3wvCgvpHFshDKRugDKV29NhrC6JFDGCh5vju7jGrYLgZthmzK5odSELtioNFYz",
+								"value": "Bearer BQBcPUn6GvHWXXYTY9qhfo7Xpx7159_DhF4RDf-20GezuXAytmx4aMgHI3V05QD9OzC58Wdb5ox5Qe7x6EZJFTiK7r_PeFFFYldygDzbfmCjp5ihShgTW2covpl9Ejbwiv0E0XEjBzsnnESOYx34XODCRrU-p2OQ0xUidAtYGTc1xZa3fXiKw0_n7NrqKL4Y4fQVGp62w92xaxIMj1eU2QJOf-VmkbjgwY8PNWp5C0kHvD1OsZNrvqKI7uQ_Djl2XkTFC2WdEVVK7UWg79rDpjCho899pAvVoifdCQUkgNrd",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "https://api.spotify.com/v1/me?id=31i63edrwcqqslsegse7niodqnxi",
+							"raw": "https://api.spotify.com/v1/me",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -30,12 +30,6 @@
 							"path": [
 								"v1",
 								"me"
-							],
-							"query": [
-								{
-									"key": "id",
-									"value": "31i63edrwcqqslsegse7niodqnxi"
-								}
 							]
 						}
 					},
@@ -111,33 +105,15 @@
 					"name": "Get Audio Features for Several Tracks",
 					"request": {
 						"method": "GET",
-						"header": [],
-						"url": null
-					},
-					"response": []
-				},
-				{
-					"name": "Get Audio Features for a Track",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": null
-					},
-					"response": []
-				},
-				{
-					"name": "Get Several Tracks",
-					"request": {
-						"method": "GET",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer BQDt00t1rDvSa4NhXb8v78h0EsTrD85N-ZRk5yO0mYhgE7Jp7HutMYxrjA0g4n2d-hXZ4mNcVXAX3Br6O6FPadUQeSR4Y7Y0qAFg-R3fuzQHNlVibNwfMJ7D_24GZsOJxD2Ao36-rGoN1gkisteYQ9Ku9MZxAz3nfCiqXbiJ9hVxv3qnii-yzMrG_v3Ov_abzwqrlgfjwUWkHBe-tu8c5_qtNq3vkrAQto0rEvjbQ_w9zhJ-yoIXbrdTOUi4Zsfi3WC8wZJ3Ai1nDtjxf7W9byxpmZMuFSfH_yj2tqnAerw3",
+								"value": "Bearer BQD02pYDUAi6MYpQkTJrGs0N3u1iPhdmn2doIVweB0V_DnGDjEkhxNUqb8en-Q6Yj_JmITQVKK-25hAPojX-3awpqPCy8CrftW95DtWX6uyDVuHn6yXZDXSgWRbySkYxbOHlaMtYs3JwzszzsW5cPh7GyeOIh2bh0rtMmyHJu-ZQQsk35emw7LxiiEfa4upJb4nvl3uXBlOyu9duFkWtxjudbRrJ49efvotq-mBlz-JJo_4DF-h3mI0sn1io2ZPJJEH_6RXMuFZ5xzp1aqxzrW-seO6dDpU8alxCMgoN9vb5",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "https://api.spotify.com/v1/tracks",
+							"raw": "https://api.spotify.com/v1/audio-features",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -146,7 +122,35 @@
 							],
 							"path": [
 								"v1",
-								"tracks"
+								"audio-features"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Audio Features for a Track",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQD6Lasp9358RWpIvaIL7OHxwdtVljnd9N2ATCsDHBMp3fQkgB9TfpjjG5VKPTClvqi2xg-qZSoWJ0lfL4f1yzE16cbaMgYXqrfpeCpuIB_BVRfmdW1aOwfIisy4qdf-P3udh9mQGXju7vaEs4l2MFhcQFjEP12HIDSXMh2xMfu-xr4GR8huj54aG2hMFQKqK1PTKx164J12vXLC2jasPvm8cjCXh883-I5eN41LNij7-hmtCYuCy8iaAl6SRo_jmRA2cYsNCdnMyn4edBtBqGkqcfsov07GoA6nYI2fPxB5",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/audio-features/11dFghVXANMlKmJXsNCbNl",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"audio-features",
+								"11dFghVXANMlKmJXsNCbNl"
 							]
 						}
 					},
@@ -156,8 +160,27 @@
 					"name": "Get a Track",
 					"request": {
 						"method": "GET",
-						"header": [],
-						"url": null
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQD02pYDUAi6MYpQkTJrGs0N3u1iPhdmn2doIVweB0V_DnGDjEkhxNUqb8en-Q6Yj_JmITQVKK-25hAPojX-3awpqPCy8CrftW95DtWX6uyDVuHn6yXZDXSgWRbySkYxbOHlaMtYs3JwzszzsW5cPh7GyeOIh2bh0rtMmyHJu-ZQQsk35emw7LxiiEfa4upJb4nvl3uXBlOyu9duFkWtxjudbRrJ49efvotq-mBlz-JJo_4DF-h3mI0sn1io2ZPJJEH_6RXMuFZ5xzp1aqxzrW-seO6dDpU8alxCMgoN9vb5",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/tracks/11dFghVXANMlKmJXsNCbNl",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"tracks",
+								"11dFghVXANMlKmJXsNCbNl"
+							]
+						}
 					},
 					"response": []
 				}
@@ -173,7 +196,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer BQDHqiVnMwd2w_gRwCWzbe2etIXze15D713dqxIq4tC3ttWvrD31_xFKkeDvd7gVWep2KKWceReLR7Hr0dKJHtFqv1845Ow3Qizn6p_QQlCXd-Wm7yI6yqMVVHB1tJOIYYHWRHJ8QNU5MYdblICJ9eVJs_Q9kghM476TvlFOE_slzG9_V90jY6yUPePNX98mzR5Yx5R6VeBzfzCe1HvLfz1g690Kslghiv3LyAJH7jVq-3ae0UiK3c8yMLi6qbtYZdggvUPGV4jTDZXm2uKJ8JI3ODWlwCq6Fctza2EfL1Gw",
+								"value": "Bearer BQBztlqO7uDKZNlLbZYYfKkBGj5EYC-3lRE_iD0iNqGZ5uTRrHEvn_-zldZoTzrzXfLPi9xMew3-WbF_36vdXkfjaz_jdLnyUi5Nppd1518JFIrObYAujNADPMqfp2UcCKCkJdQ-nLSOv-buwP1sNBnV3CaZj7RskXTehioucyJ9tfXKyHwSZB4cbYyqPL-3NeeuXsNUTZBxv16HET5SRCRXlgKSLuPjS6rhklI6hpVOzhj-3TokiAJyL6dY7glIGvkC0-tm7fmlpSmI8W2VJAVBZL8mOmfMnC1GoNhxfJki",
 								"type": "text"
 							}
 						],
@@ -396,143 +419,6 @@
 								"users",
 								"31i63edrwcqqslsegse7niodqnxi",
 								"playlists"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Add Items to a Playlist",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer BQDDlnN8jHMkKhOZou6SQOxmP_YV6OmilrNDL4P81IxPxo4oWn0vCCaheuntZg6H4OY38CFM21fEk5wwxSt0i4mRYokJ4BtxWEMcy2ABXZ52ERH8eSgPfgr1nssImPmMT8rqqNmBxm56Iw_RcI_Z25zO-TMAZj-V5doliyuFEr0P-liFtNpizgYgijHt6VwtXiXACdyBt86g5QtybRnYGT5EuZchBJmSpvAWmnTF7-UjyPcu0Csbe7ailxfgWzLp84TBaHflNLcExNGIo8aIDEx4eAQGWH_7rCCmxHDiGr2J",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://api.spotify.com/v1/playlists/3cEYpjA9oz9GiPac4AsH4n/tracks",
-							"protocol": "https",
-							"host": [
-								"api",
-								"spotify",
-								"com"
-							],
-							"path": [
-								"v1",
-								"playlists",
-								"3cEYpjA9oz9GiPac4AsH4n",
-								"tracks"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Upload a Custom Playlist Cover Image",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer BQDDlnN8jHMkKhOZou6SQOxmP_YV6OmilrNDL4P81IxPxo4oWn0vCCaheuntZg6H4OY38CFM21fEk5wwxSt0i4mRYokJ4BtxWEMcy2ABXZ52ERH8eSgPfgr1nssImPmMT8rqqNmBxm56Iw_RcI_Z25zO-TMAZj-V5doliyuFEr0P-liFtNpizgYgijHt6VwtXiXACdyBt86g5QtybRnYGT5EuZchBJmSpvAWmnTF7-UjyPcu0Csbe7ailxfgWzLp84TBaHflNLcExNGIo8aIDEx4eAQGWH_7rCCmxHDiGr2J",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "https://api.spotify.com/v1/playlists/3cEYpjA9oz9GiPac4AsH4n/images",
-							"protocol": "https",
-							"host": [
-								"api",
-								"spotify",
-								"com"
-							],
-							"path": [
-								"v1",
-								"playlists",
-								"3cEYpjA9oz9GiPac4AsH4n",
-								"images"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Reorder or Replace a Playlist's Items",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer BQDDlnN8jHMkKhOZou6SQOxmP_YV6OmilrNDL4P81IxPxo4oWn0vCCaheuntZg6H4OY38CFM21fEk5wwxSt0i4mRYokJ4BtxWEMcy2ABXZ52ERH8eSgPfgr1nssImPmMT8rqqNmBxm56Iw_RcI_Z25zO-TMAZj-V5doliyuFEr0P-liFtNpizgYgijHt6VwtXiXACdyBt86g5QtybRnYGT5EuZchBJmSpvAWmnTF7-UjyPcu0Csbe7ailxfgWzLp84TBaHflNLcExNGIo8aIDEx4eAQGWH_7rCCmxHDiGr2J",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "https://api.spotify.com/v1/playlists/3cEYpjA9oz9GiPac4AsH4n/tracks",
-							"protocol": "https",
-							"host": [
-								"api",
-								"spotify",
-								"com"
-							],
-							"path": [
-								"v1",
-								"playlists",
-								"3cEYpjA9oz9GiPac4AsH4n",
-								"tracks"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Remove Items from a Playlist",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": null
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Search",
-			"item": [
-				{
-					"name": "Search for an Item",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer BQDC81owzLGaCUSrRienO6LafpDVFYwRlk7ow1cDVfwKr93Jsk_CmEbJap8DZwqDlTvwMDF5UCFp_4SxKFqw4ddoCYTi1yGh1fjMiSHQP3sVz8V2UwIPa5syu_4tGjxtkfV_OLwT4rjcel7vbmQneaIukHNpQnCvDdYCAqywnxRLAo-N2DqJovprbXK84V0pgSjdj6iJ16exWcC1sSPv5hO2rCsjVBU6HJwdXDf8LuwQY3JJ9tlShL2wn_P4iwhGuNZE_lOUx23_NCzKeNw3Yhidij32AGe5Is_LQCeTYiD2",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "https://api.spotify.com/v1/search",
-							"protocol": "https",
-							"host": [
-								"api",
-								"spotify",
-								"com"
-							],
-							"path": [
-								"v1",
-								"search"
 							]
 						}
 					},
